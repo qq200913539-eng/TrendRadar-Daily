@@ -238,16 +238,16 @@ display:
     new_items: false                  # 新增热点区域：含热榜新增 + RSS 新增（true=显示, false=隐藏）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
-    rss: true                         # RSS 订阅区域（true=显示并分析, false=隐藏并跳过分析）
-    standalone: false                 # 独立展示区：完整热榜/RSS，不受关键词过滤（true=显示, false=隐藏）
-    ai_analysis: true                 # AI 分析区域（true=显示, false=隐藏）
+    rss: false                        # RSS 已关闭
+    standalone: true                  # 独立展示区：全部平台完整热榜，不受关键词过滤
+    ai_analysis: false                # 未配置 AI Key
 
   # 独立展示区：将指定平台/RSS 完整展示，不受关键词过滤
   # 推送展示由 regions.standalone 控制，AI 分析由 ai_analysis.include_standalone 控制
   standalone:
-    platforms: ["zhihu", "wallstreetcn-hot"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["toutiao", "baidu", "wallstreetcn-hot", "thepaper", "bilibili-hot-search", "cls-hot", "ifeng", "tieba", "weibo", "douyin", "zhihu"]
     rss_feeds: []                                # RSS 源 ID 列表（如 ["hacker-news"]）
-    max_items: 20                                # 每个源最多展示条数（0=不限制）
+    max_items: 0                                 # 0=不限制，每平台展示完整榜单
 
 
 # ===============================================================
