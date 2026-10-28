@@ -99,11 +99,6 @@ platforms:
     - id: "zhihu"
       name: "知乎"
       expected_domain: "zhihu.com"
-    - id: "36kr"
-      name: "36氪"
-      expected_domain: "36kr.com"
-    - id: "kuaishou"
-      name: "快手"
     - id: "juejin"
       name: "掘金"
       expected_domain: "juejin.cn"
@@ -127,9 +122,6 @@ platforms:
       expected_domain: "gelonghui.com"
     - id: "cankaoxiaoxi"
       name: "参考消息"
-    - id: "zaobao"
-      name: "联合早报"
-      expected_domain: "zaobao.com"
     - id: "producthunt"
       name: "Product Hunt"
       expected_domain: "producthunt.com"
@@ -282,7 +274,7 @@ display:
   # 独立展示区：将指定平台/RSS 完整展示，不受关键词过滤
   # 推送展示由 regions.standalone 控制，AI 分析由 ai_analysis.include_standalone 控制
   standalone:
-    platforms: ["toutiao", "baidu", "wallstreetcn-hot", "thepaper", "bilibili-hot-search", "cls-hot", "ifeng", "tieba", "weibo", "douyin", "zhihu", "36kr", "kuaishou", "juejin", "sspai", "ithome", "v2ex", "xueqiu-hotstock", "jin10", "gelonghui", "cankaoxiaoxi", "zaobao", "producthunt", "github-trending-today"]
+    platforms: ["toutiao", "baidu", "wallstreetcn-hot", "thepaper", "bilibili-hot-search", "cls-hot", "ifeng", "tieba", "weibo", "douyin", "zhihu", "juejin", "sspai", "ithome", "v2ex", "xueqiu-hotstock", "jin10", "gelonghui", "cankaoxiaoxi", "producthunt", "github-trending-today"]
     rss_feeds: []                                # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 0                                 # 0=不限制，每平台展示完整榜单
 
